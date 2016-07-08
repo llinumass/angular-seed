@@ -1,5 +1,12 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+<head>
+  <link rel="stylesheet" href="view2/page2.css">
+</head>
+<body ng-app="myApp.view2" ng-controller="View2Ctrl">
+  <div class = "page2">
+    <div><h1>Welcome.</h1></div>
+    <div><p>Here's a favorite button</p><br></div>
+    <div><favorite-button item='item'></favorite-button></div>
+    <br>
+    <div>{{haveYouFavorited()}}</div>
+  </div>
+</body>

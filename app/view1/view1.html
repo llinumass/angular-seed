@@ -1,1 +1,13 @@
-<p>This is the partial for view 1.</p>
+<head>
+<link rel="stylesheet" href="view1/page1.css">
+</head>
+<body ng-app="myApp.view1" ng-controller="View1Ctrl">
+    <div class="page1">
+        <div class = "centered"><h1>{{who}}</h1></div>
+          <div>
+          <input type="text" ng-model="newName" ng-hide="ableToProceed==true">
+          <button ng-click="changeName()" ng-hide="ableToProceed==true">Next</button>
+          </div>
+          <div><button ng-click="goTo('/view2')" ng-show="ableToProceed==true">Proceed</button></div>
+    </div>
+</body>
